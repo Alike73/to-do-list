@@ -14,6 +14,8 @@
   --orange: #FFA500;
   --grey: #5F6F94;
   --neon: #00FE1F;
+  --green: #10A19D;
+  --bg: rgb(9, 14, 23);
 }
 
 /* ===============ScrollBar============> */
@@ -84,7 +86,7 @@ h1 {
 }
 
 .buttons button {
-  --_c: #88C100;
+  --_c: #54B435;
   flex: calc(1.25 + var(--_s,0));
   min-width: 0;
   font-size: 40px;
@@ -141,10 +143,15 @@ button:active {
   color: var(--white);
 }
 
-.separator {
+.separatorOne {
   width: 100%;
   height: 1.5rem;
-  background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+.separatorTwo {
+  width: 100%;
+  height: 1.5rem;
+  background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
 }
 
 input {
@@ -253,14 +260,19 @@ span {
   animation-name: ticker;
   animation-duration: 22s; /* Speed of the text*/
 }
+
 .ticker-move:hover{
   animation-play-state: paused;
 }
+
 .ticker__item{
   display: inline-block;
   padding: 10px 2rem;
-  color:var(--neon);
   font-size: clamp(16px, calc(var(--size)*1.7), 26px);
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--orange);
+  color: transparent;
 }
 
 .Footer {

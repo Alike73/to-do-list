@@ -61,7 +61,7 @@ export class ToDoList extends Component {
                     <button onClick={() => this.addItem(this.state.userInput)}>Add</button>
                     <button onClick={() => this.deleteItem()}>Del</button>
                 </div>
-
+                <div className="separatorOne"></div>
                 <div className="tcontainer">
                     <div className="ticker-wrap">
                         <div className="ticker-move">
@@ -74,7 +74,7 @@ export class ToDoList extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="separator"></div>
+                <div className="separatorTwo"></div>
                 <div className="Container">
                     <input type="text" placeholder="Add your task in the list" onChange={(e) => {this.onChangeEvent(e.target.value)}} value={this.state.userInput} />
                 </div>
