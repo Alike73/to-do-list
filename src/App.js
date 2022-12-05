@@ -3,6 +3,8 @@ import { Component } from 'react';
 import './App.css';
 import { ToDoList } from './ToDoList';
 import {Helmet} from "react-helmet";
+import Time from './TestTime';
+
 
 
 
@@ -16,6 +18,8 @@ class App extends Component {
           <link rel="canonical" href="http://mysite.com/example" />
           <meta name="description" content="ToDoList" />
         </Helmet>
+        
+        <Time />
         <ToDoList />
       </div>
     )

@@ -59,6 +59,41 @@ body {
   font-family: system-ui, sans-serif;
 }
 
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.Date,
+.Time {
+  font-size: clamp(20px, calc(var(--size)*1.2), 28px);
+  font-weight: 200;
+  color: var(--neon);
+}
+.Date {
+  margin-right: 15px;
+}
+.Time {
+  margin-left: 15px;
+}
+
+
+.Date::before {
+  content: "\f073";
+  font-family: "FontAwesome";
+  font-size: 32px;
+  color: var(--orange);
+}
+.Time::before {
+  content: "\f017";
+  font-family: "FontAwesome";
+  font-size: 32px;
+  color: var(--orange);
+}
+
+
 .mainBox {
   position: relative;
   width: 500px;
